@@ -5,6 +5,8 @@ import dao.FileDAOImpl;
 import entity.FileInfoEntity;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.RandomAccessFile;
 import java.util.List;
 
 public class FileService {
@@ -20,4 +22,13 @@ public class FileService {
         }
     }
 
+    public void separaFicheros(String path) throws FileNotFoundException {
+        File file = new File(path);
+        RandomAccessFile lectura = new RandomAccessFile(file,path);
+        if(){
+
+        }else {
+
+        }
+    }
 }
